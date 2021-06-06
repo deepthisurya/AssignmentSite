@@ -1,15 +1,17 @@
 import firebase from "firebase/app";
-import 'firebase/firestore'
+import "firebase/firestore";
+import { useUser } from "../../firebase/useUser";
 
 const WriteToCloudFirestore = () => {
+  const { user } = useUser();
   const sendData = () => {
     try {
       firebase
         .firestore()
-        .collection('mycollection')
-        .doc('my_document')
+        .collection("mycollection")
+        .doc(user.id)
         .set({
-          string_data: 'Deepthi vemprala',
+          string_data: "Deepthi vemprala",
           number_data: 2,
           boolean_data: true,
         })
@@ -20,9 +22,7 @@ const WriteToCloudFirestore = () => {
     }
   };
 
-  return(
-    <button onClick={sendData}> Send Data to firestore </button>
-  ) 
-}
+  return <button onClick={sendData}> Send Data to firestore </button>;
+};
 
-export default WriteToCloudFirestore
+export default WriteToCloudFirestore;
