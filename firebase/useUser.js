@@ -8,7 +8,6 @@ import {
     setUserCookie,
     getUserFromCookie,
 } from './userCookies'
-import { mapUserData } from './mapUserData'
 
 initFirebase()
 
@@ -16,7 +15,7 @@ const useUser = () => {
     const [user, setUser] = useState()
     const router = useRouter()
 
-    const logout = async () => {
+    const logout = async() => {
         return firebase
             .auth()
             .signOut()

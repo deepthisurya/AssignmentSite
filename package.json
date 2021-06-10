@@ -1,21 +1,30 @@
 {
-  "name": "projectdev",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "bootstrap": "^5.0.1",
-    "firebase": "^8.6.3",
-    "firebase-admin": "^9.9.0",
-    "js-cookie": "^2.2.1",
-    "next": "10.2.3",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.6.1",
-    "react-dom": "17.0.2",
-    "react-firebaseui": "^5.0.2"
-  }
+    "name": "projectdev",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "bootstrap": "^5.0.1",
+        "firebase": "^8.6.3",
+        "firebase-admin": "^9.9.0",
+        "framer-motion": "^4.1.17",
+        "js-cookie": "^2.2.1",
+        "next": "10.2.3",
+        "react": "^17.0.2",
+        "react-bootstrap": "^1.6.1",
+        "react-dom": "17.0.2",
+        "react-firebaseui": "^5.0.2",
+        "react-icons": "^4.2.0",
+        "react-is": "16.8",
+        "styled-components": "^5.0.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.6",
+        "postcss": "^8.3.0",
+        "tailwindcss": "^2.1.4"
+    }
 }
