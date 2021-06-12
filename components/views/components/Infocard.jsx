@@ -5,7 +5,7 @@ const Infocard = (props) => {
   return (
     <>
       <Card
-        style={{ padding: "5px", backgroundColor: "black", color: "white" }}
+        style={{ padding: "0px", backgroundColor: "black", color: "white" }}
       >
         <Card.Header>{props.Header}</Card.Header>
         <Card.Body>

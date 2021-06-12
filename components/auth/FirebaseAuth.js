@@ -1,3 +1,4 @@
+
 import initFirebase from "../../firebase/initFirebase";
 import { useEffect, useState } from "react";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
@@ -41,13 +42,12 @@ const FirebaseAuth = () => {
   }, []);
   return (
     <div>
-      {" "}
       {renderAuth ? (
         <StyledFirebaseAuth
           uiConfig={firebaseAuthConfig}
           firebaseAuth={firebase.auth()}
         />
-      ) : null}{" "}
+      ) : null}
     </div>
   );
 };

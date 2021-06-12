@@ -1,16 +1,19 @@
 import { useUser } from "../firebase/useUser";
-import Header from "../components/views/Header";
 import AdminDashboard from "../components/views/AdminDashboard";
 import Layout from "../components/views/Layout";
+import WriteData from "../components/cloudFirestore/Write";
+import ReadData from "../components/cloudFirestore/Read";
 
 export default function Home() {
   const { user, logout } = useUser();
   if (user) {
     return (
       <>
-        <Header />
-        {/* <button onClick={logout}>LogOut</button> */}
-        <AdminDashboard user={user}/>
+        <button onClick={logout}>LogOut</button>
+        <h1>{user.name}</h1>
+        <h3>{user.email}</h3>
+        <WriteData /> <ReadData />
+        {/* <AdminDashboard user={user} /> */}
       </>
     );
   } else

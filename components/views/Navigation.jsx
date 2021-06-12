@@ -13,12 +13,17 @@ const Navigation = () => {
   // const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+        style={{ height: "80px" }}
+      >
         <Container>
           <Navbar.Brand href="#">Assingment Dev</Navbar.Brand>
           <Navbar.Toggle />
-        </Container>
-        <Container>
+
           <Navbar.Collapse>
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
@@ -31,15 +36,6 @@ const Navigation = () => {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-            </Nav>
-
-            <Nav className="ml-auto">
-              <Nav.Link href="/auth">
-                <Button variant="primary">Login</Button>
-              </Nav.Link>
-              <Nav.Link eventKey={2} href="/">
-                <Button variant="warning">Sign Up</Button>
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

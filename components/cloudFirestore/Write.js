@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import { useUser } from "../../firebase/useUser";
+import Button from "react-bootstrap/Button";
 
 const WriteToCloudFirestore = () => {
   const { user } = useUser();
@@ -22,7 +23,14 @@ const WriteToCloudFirestore = () => {
     }
   };
 
-  return <button onClick={sendData}> Send Data to firestore </button>;
+  return (
+    <div style={{ margin: "5px 0" }}>
+      <Button onClick={sendData} style={{ width: "20%" }}>
+        {" "}
+        Send Data to firestore{" "}
+      </Button>
+    </div>
+  );
 };
 
 export default WriteToCloudFirestore;

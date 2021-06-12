@@ -8,7 +8,7 @@ const Carousal = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            src="https://image.freepik.com/free-photo/beautiful-young-woman-home-office-working-from-home-teleworking-concept_144627-46780.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -19,7 +19,7 @@ const Carousal = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            src="https://image.freepik.com/free-photo/beautiful-young-woman-home-office-working-from-home-teleworking-concept_144627-46780.jpg"
             alt="Second slide"
           />
 
@@ -29,7 +29,11 @@ const Carousal = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src="" alt="Third slide" />
+          <img
+            className="d-block w-100"
+            src="https://image.freepik.com/free-photo/beautiful-young-woman-home-office-working-from-home-teleworking-concept_144627-46780.jpg"
+            alt="Third slide"
+          />
 
           <Carousel.Caption>
             <h3>Third slide label</h3>
@@ -40,7 +44,7 @@ const Carousal = () => {
         </Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          src="https://image.freepik.com/free-photo/beautiful-young-woman-home-office-working-from-home-teleworking-concept_144627-46780.jpg"
           alt="Second slide"
         />
       </Carousel>
