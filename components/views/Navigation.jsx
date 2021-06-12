@@ -13,13 +13,7 @@ const Navigation = () => {
   // const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-        style={{ height: "80px" }}
-      >
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#">Assingment Dev</Navbar.Brand>
           <Navbar.Toggle />
