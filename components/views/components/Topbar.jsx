@@ -12,7 +12,7 @@ const Topbar = () => {
         <Card.Body variant="primary">
           <Container fluid="md">
             <Row>
-              <Col xs={8} sm={7} md={7} lg={8}>
+              <Col xs={7} sm={7} md={7} lg={8}>
                 <Card.Header>
                   <span style={{ fontSize: 9 }}>
                     <FaLaptopCode />
@@ -20,7 +20,7 @@ const Topbar = () => {
                   </span>
                 </Card.Header>
               </Col>
-              <Col xs={4} sm={5} md={5} lg={4}>
+              <Col xs={5} sm={5} md={5} lg={4}>
                 <Card.Link href="/auth">
                   <Button variant="primary" style={{ fontSize: 10 }}>
                     <IoMdLogIn />
